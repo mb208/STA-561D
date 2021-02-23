@@ -44,7 +44,7 @@ def plot_predictions(ax, bbm, **kwargs):
 
 
 def add_random_noise(x, sd=0.5):
-    return x * np.random.normal(1.0, sd, size=len(x))
+    return x + np.random.normal(1.0, sd, size=len(x))
 
 
 def fit_bbm_data(x, y, sd=0.25):
